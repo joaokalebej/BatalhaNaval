@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Batalha Naval</title>
+    <meta name="description"
+          content="Batalha naval é um jogo de tabuleiro de dois jogadores, no qual os jogadores têm de adivinhar em que quadrados estão os navios do oponente.">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="ten column">
+            <header style="text-align: center">
+                <h1 style="margin-bottom: 0">
+                    Batalha Naval
+                </h1>
+                <p style="margin-top: 0">
+                    Acerte os navios do computador
+                </p>
+            </header>
+            <section id="game"></section>
+            
+        </div>
+    </div>
+</div>
+
+<label id="sound-checkbox">
+    <input type="checkbox" checked>
+    <span class="label-body">Som</span>
+</label>
+
+<audio id="melody" loop>
+    <source src="../sounds/sounds_melody.mp3">
+    <source src="../sounds/sounds_melody.wav">
+</audio>
+<audio id="miss">
+    <source src="../sounds/sounds_miss.mp3">
+    <source src="../sounds/sounds_miss.wav">
+</audio>
+<audio id="hit">
+    <source src="../sounds/sounds_hit.mp3">
+    <source src="../sounds/sounds_hit.wav">
+</audio>
+<audio id="win">
+    <source src="../sounds/sounds_win.mp3">
+    <source src="../sounds/sounds_win.wav">
+</audio>
+<audio id="click">
+    <source src="../sounds/sounds_click.mp3">
+    <source src="../sounds/sounds_click.wav">
+</audio>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
